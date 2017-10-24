@@ -2,16 +2,14 @@
   margin: 0;
   padding: 0;
 }
-html *{
+body{
+  display: block;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
   text-align: center;
-}
-body{
-  display: block;
 }
 h2{
   font-size: 1.5em;
@@ -31,6 +29,7 @@ h5{
 header{
   width: 100%;
   height: 69px;
+  background-color: black;
   border-bottom: 1px solid seashell;
   display: flex;
   align-items: center;
@@ -52,15 +51,14 @@ nav span{
 }
 span a{
   text-decoration: underline;
+  color: seashell;
 }
+
+/* main container */
 .main{
   width: 1200px;
   margin: 0 auto;
   padding: 70px 10px 0 10px; /*off-setting the fixed header*/
-}
-
-.content{
-  width: 100%;
 }
 /* mission section */
 #mission{
@@ -109,7 +107,6 @@ span a{
 .flex-container{
   display: flex;
   justify-content: center;
-  background-color: transparent;
 }
 .address{
   width: 300px;
@@ -119,10 +116,14 @@ span a{
   margin: 10px 20px;
   font-size: 1.17em;
 }
-.special{
+#special{
   opacity: 1;
+  color: red;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
 }
-/* contacts */
 #contacts{
   height: 200px;
 }
@@ -132,4 +133,15 @@ span a{
 /* footer */
 footer h5{
   text-align: left;
+}
+/* reusable classes */
+.content{
+  display: block;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+.banner{
+  width: 100%;
 }
